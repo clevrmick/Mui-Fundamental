@@ -1,10 +1,9 @@
 import './App.css';
-
+import { MuiTypography } from './components/';
 function App() {
   return (
     <div className="App">
-      
-      </header>
+      <MuiTypography />
     </div>
   );
 }

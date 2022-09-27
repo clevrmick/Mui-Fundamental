@@ -1,4 +1,10 @@
-import { Button, Typography, Stack, IconButton } from '@mui/material';
+import {
+  Button,
+  Typography,
+  Stack,
+  IconButton,
+  ButtonGroup,
+} from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 
 const MuiButton = () => {
@@ -64,9 +70,22 @@ const MuiButton = () => {
           >
             Send
           </Button>
-          <IconButton>
-            <SendIcon size="small" color="success" />
+          <IconButton arial-label="send" size="small" color="success">
+            <SendIcon />
           </IconButton>
+        </Stack>
+        <Typography variant="h3">Button Group</Typography>
+        <Stack spacing={2} direction="row">
+          <ButtonGroup
+            variant="contained"
+            size="small"
+            color="success"
+            orientation="vertical"
+          >
+            <Button>Left</Button>
+            <Button>Center</Button>
+            <Button>Right</Button>
+          </ButtonGroup>
         </Stack>
       </Stack>
     </div>

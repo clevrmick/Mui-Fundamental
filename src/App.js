@@ -1,10 +1,11 @@
 import './App.css';
-import { MuiTypography, MuiButton } from './components/';
+import { MuiTypography, MuiButton, MuiTextField } from './components/';
 function App() {
   return (
     <div className="App">
-      <MuiTypography />
-      <MuiButton />
+      {/* <MuiTypography /> */}
+      {/* <MuiButton /> */}
+      <MuiTextField />
     </div>
   );
 }
